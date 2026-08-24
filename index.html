@@ -1,117 +1,123 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>Happy Birthday Dr. Halil</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="robots" content="noindex, nofollow">
-    <style type="text/css">
-        @font-face {
-            font-family: digit;
-            src: url('digital-7_mono.ttf') format("truetype");
-        }
-    </style>
-    <link href="css/default.css" type="text/css" rel="stylesheet">
-    <script type="text/javascript" src="js/garden.js"></script>
-    <script type="text/javascript" src="js/birthday-app.js"></script>
+	<title>Happy Birthday Dr. Halil</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="noindex, nofollow">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('./digital-7_mono.ttf') format("truetype");
+		}
+		/* Yazıların pastanın içinde tam ortalanması için ek CSS düzenlemesi */
+		#words {
+			position: absolute !important;
+			top: 130px !important;
+			left: 0 !important;
+			width: 100% !important;
+			text-align: center !important;
+		}
+		#messages {
+			margin-bottom: 25px !important;
+		}
+		#elapseClock {
+			margin-top: 8px !important;
+		}
+	</style>
+	<link href="./css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="./js/garden.js"></script>
+	<script type="text/javascript" src="./js/birthday-app.js"></script>
 </head>
 
 <body>
-    <div id="mainDiv">
-        <div id="content">
-            <div id="code">
-                <span class="comments">/**</span><br />
-                <span class="space"/><span class="comments">* [SYSTEM ERROR]: COMPUTER SYSTEMS BREACH</span><br />
-                <span class="space"/><span class="comments">* Target: Dr. Halil</span><br />
-                <span class="space"/><span class="comments">* Status: System Overridden by Yağmur</span><br />
-                <span class="space"/><span class="comments">* </span><br />
-                <span class="space"/><span class="comments">* Bugün, Halil'in doğum günü.</span><br />
-                <span class="space"/><span class="comments">* Bu özel günü kutlamak için Halil’in sistemine sızılıyor…</span><br />
-                <span class="space"/><span class="comments">* Lütfen bekleyiniz…</span><br />
-                <span class="space"/><span class="comments">**/</span><br /><br />
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span><br />
+				<span class="space"/><span class="comments">* [SYSTEM ERROR]: COMPUTER SYSTEMS BREACH</span><br />
+				<span class="space"/><span class="comments">* Target: Dr. Halil</span><br />
+				<span class="space"/><span class="comments">* Status: System Overridden by Yağmur</span><br />
+				<span class="space"/><span class="comments">* </span><br />
+				<span class="space"/><span class="comments">* Bugün, Halil'in doğum günü.</span><br />
+				<span class="space"/><span class="comments">* Bu özel günü kutlamak için Halil’in sistemine sızılıyor…</span><br />
+				<span class="space"/><span class="comments">* Lütfen bekleyiniz…</span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+				root@halil-pc ~ $ >> <span class="keyword">cd </span> /system/medical_records && <span class="keyword">sh </span> hack_dr_halil.sh(<span class="string">"Halil"</span>);<br />
+				<span class="comments">// Nöbetler, anatomi komiteleri ve bitmeyen stajlar arasında yaş sayacı güncelleniyor... </span><br />
+				Date currentTime = <span class="keyword">new</span> Date(); <br />
+				SimpleDateFormat formatter = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"2005-10-21"</span>);<br />
+				String dateString = formatter.format(currentTime);<br />
+				if( dateString.equals(<span class="string">"2026-10-21 00:00:00"</span>) ){<br />
+				<span class="space"/>halil.age ++;<br />
+				<span class="space"/>halil.doctor_level ++;<br />
+				<span class="space"/>System.out.println(<span class="string">"[CRITICAL ALERT]: Halil 1 yaş daha büyüdü ve Yağmur’un hayatında gördüğü en iyi doktor olmaya 1 adım daha yaklaştı!"</span>);<br />
+				}<br />
+				<span class="keyword">new</span> Thread (){<br />
+				@Override <br />
+				<span class="comments">// Vital bulgular ve hayati değerler yükleniyor:</span><br />
+				while(true){<br />
+				<span class="space"/>halil.serotonin ++;<br />
+				<span class="space"/>halil.dopamine ++;<br />
+				<span class="space"/>halil.stethoscope_skill ++;<br />
+				}.start()<br />
+				<span class="comments">// Sistem mesajı: Klavyemden bu kadarı geldi, senin uzman doktor olacağın günleri de görmek nasip olur bize umarım...</span><br />
+				System.out.println(<span class="string">"İyi ki doğdun Halil iyi ki varsın, sevdiklerinle nice mutlu başarılı ve en önemlisi de sağlıklı günlerin olsun. İyi ki seni tanımışım ❤️"</span>);
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						You defy stars from:
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						İyi ki doğdun Dr. Halil!<br/>
+						<div class="signature">- Yağmur</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			2026 &copy; Yağmur
+		</div>
+	</div>
+	<script type="text/javascript">
+		const together = new Date();
+		together.setFullYear(2005, 9, 21);
+		together.setHours(0);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			const msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			document.getElementById("code").style.display = "none";
+			const copyright = document.getElementById("copyright");
+			copyright.style.position = "absolute";
+			copyright.style.bottom = "10px";
+			document.execCommand("stop");
+		} else {
+			document.addEventListener('DOMContentLoaded', function() {
+				setTimeout(() => {
+					if (window.birthdayApp) {
+						window.birthdayApp.startHeartAnimation();
+					}
+				}, 5000);
 
-                <span class="comments">// Terminal erişimi sağlandı: Sistem sunucularına sızılıyor...</span><br />
-                root@halil-pc ~ $ >> <span class="keyword">cd</span> /system/medical_records && <span class="keyword">sh</span> hack_dr_halil.sh --target=<span class="string">"Halil"</span>;<br /><br />
+				if (window.birthdayApp) {
+					window.birthdayApp.timeElapse(together);
+					setInterval(() => {
+						window.birthdayApp.timeElapse(together);
+					}, 500);
 
-                <span class="comments">// Nöbetler, anatomi komiteleri ve bitmeyen stajlar arasında yaş sayacı güncelleniyor...</span><br />
-                Date currentTime = <span class="keyword">new</span> Date();<br />
-                SimpleDateFormat formatter = <span class="keyword">new</span> SimpleDateFormat(<span class="string"></span>);<br />
-                String dateString = formatter.format(currentTime);<br /><br />
-
-                <span class="keyword">if</span> (dateString.equals(<span class="string">"2026-10-21 00:00:00"</span>)) {<br />
-                <span class="space"/><span class="space"/>halil.age++;<br />
-                <span class="space"/><span class="space"/>halil.doctor_level++;<br />
-                <span class="space"/><span class="space"/>System.out.println(<span class="string">"[CRITICAL ALERT]: Halil 1 yaş daha büyüdü ve Yağmur’un hayatında gördüğü en iyi doktoru olmaya 1 adım daha yaklaştı!"</span>);<br />
-                }<br /><br />
-
-                <span class="keyword">new</span> Thread () {<br />
-                <span class="space"/><span class="space"/>@Override<br />
-                <span class="space"/><span class="space"/><span class="keyword">public void</span> run() {<br />
-                <span class="space"/><span class="space"/><span class="space"/><span class="space"/><span class="keyword">while</span> (true) {<br />
-                <span class="space"/><span class="space"/><span class="space"/><span class="space"/><span class="space"/><span class="space"/><span class="comments">// Vital bulgular ve hayati değerler yükleniyor:</span><br />
-                <span class="space"/><span class="space"/><span class="space"/><span class="space"/><span class="space"/><span class="space"/>halil.serotonin++;<br />
-                <span class="space"/><span class="space"/><span class="space"/><span class="space"/><span class="space"/><span class="space"/>halil.dopamine++;<br />
-                <span class="space"/><span class="space"/><span class="space"/><span class="space"/><span class="space"/><span class="space"/>halil.stethoscope_skill++;<br />
-                <span class="space"/><span class="space"/><span class="space"/><span class="space"/>}<br />
-                <span class="space"/><span class="space"/>}<br />
-                }.start();<br /><br />
-
-                <span class="comments">// Sistem mesajı: Klavyemden bu kadarı geldi, senin uzman doktor olacağın günleri de görmek nasip olur bize umarım...</span><br />
-                System.out.println(<span class="string">"İyi ki doğdun Halil iyi ki varsın, sevdiklerinle nice mutlu başarılı ve en önemlisi de sağlıklı günlerin olsun. İyi ki seni tanımışım ❤️"</span>);
-            </div>
-            <div id="loveHeart">
-                <canvas id="garden"></canvas>
-                <div id="words">
-                    <div id="messages">
-                        <div id="elapseClock"></div>
-                    </div>
-                    <div id="loveu">
-                        İyi ki doğdun Dr. Halil!<br/>
-                        <div class="signature">- Yağmur</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="copyright">
-            2026 &copy; Yağmur
-        </div>
-    </div>
-    <script type="text/javascript">
-        // Kalp animasyonu ve sayaç başlangıç tarihi (Halil'in Doğum Tarihi)
-        const together = new Date();
-        together.setFullYear(2005, 9, 21); // Ay indeksi 0'dan başladığı için 10. ay (Ekim) için 9 yazılır.
-        together.setHours(0);
-        together.setMinutes(0);
-        together.setSeconds(0);
-        together.setMilliseconds(0);
-        
-        if (!document.createElement('canvas').getContext) {
-            const msg = document.createElement("div");
-            msg.id = "errorMsg";
-            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-            document.body.appendChild(msg);
-            document.getElementById("code").style.display = "none";
-            const copyright = document.getElementById("copyright");
-            copyright.style.position = "absolute";
-            copyright.style.bottom = "10px";
-            document.execCommand("stop");
-        } else {
-            document.addEventListener('DOMContentLoaded', function() {
-                setTimeout(() => {
-                    if (window.birthdayApp) {
-                        window.birthdayApp.startHeartAnimation();
-                    }
-                }, 5000);
-
-                if (window.birthdayApp) {
-                    window.birthdayApp.timeElapse(together);
-                    setInterval(() => {
-                        window.birthdayApp.timeElapse(together);
-                    }, 500);
-
-                    window.birthdayApp.adjustCodePosition();
-                    window.birthdayApp.typewriter(document.getElementById("code"));
-                }
-            });
-        }
-    </script>
+					window.birthdayApp.adjustCodePosition();
+					window.birthdayApp.typewriter(document.getElementById("code"));
+				}
+			});
+		}
+	</script>
 </body>
+</html>
